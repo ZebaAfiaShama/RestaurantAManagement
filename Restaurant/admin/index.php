@@ -1,39 +1,36 @@
-<html>
-<head>
-<title>Food Order Website-Home page</title>
-<link rel="stylesheet" href="../css/admin.css">
-</head>
-<body>
-<!--Menu Section Starts-->
-
-<div class="menu">
-<div class="wrapper"> 
-
-</div>
-</div>
-<!--Menu Section Ends-->
+<?php include('partials/menu.php');
+?>
 
 
 <!--Main Content Section Starts-->
 
 <div class="main-content">
 <div class="wrapper"> 
+<h1>DASHBOARD</h1>
 
+<div class="col-4 text-center">
+  <h1></h1>
+  <br/>
+  Categories
+</div>
+<div class="col-4 text-center">
+  <h1></h1>
+  <br/>
+  Categories
+</div>
+<div class="col-4 text-center">
+  <h1></h1>
+  <br/>
+  Categories
+</div>
+<div class="col-4 text-center">
+  <h1></h1>
+  <br/>
+  Categories
+</div>
+<div class="clearfix"></div>
 </div>
 </div>
 <!--Main Content Section Ends-->
 
-
-<!--Footer Section Starts-->
-<div class="footer">
-<div class="wrapper"> 
-<p class="text-center">2021 All rights reserved, Sharna's Bakery. Developed By- <a href="#">Zeba Afia Shama</a></p>
-</div>
-</div>
-<!--Footer Section Ends-->
-
-
-
-
-</body>
-</html>
+<?php include('partials/footer.php');?>
