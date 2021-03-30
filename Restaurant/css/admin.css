@@ -60,6 +60,12 @@ padding: 1%;
 .btn-danger:hover{
   background-color: #eb3b5a;
 }
+.success{
+  color: #2ed573;
+}
+.error{
+  color: #ff4757;
+}
 /*Css for Menu*/
 .menu{
   border-bottom: 1px solid grey;

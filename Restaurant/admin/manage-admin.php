@@ -13,6 +13,31 @@
      echo $_SESSION['add'];//Displaying Session Message
      unset($_SESSION['add']);//Removing Session Message
  }
+       if(isset($_SESSION['delete']))
+       {
+           echo $_SESSION['delete'];
+           unset($_SESSION['delete']);
+       }
+       if(isset($_SESSION['update']))
+       {
+           echo $_SESSION['update'];
+           unset($_SESSION['update']);
+       }
+       if(isset($_SESSION['user-not-found']))
+       {
+           echo $_SESSION['user-not-found'];
+           unset($_SESSION['user-not-found']);
+       }
+    //    if(isset($_SESSION['pass-not-match']))
+    //    {
+    //        echo $_SESSION['pass-not-match'];
+    //        unset($_SESSION['pass-not-match']);
+    //    }
+    if(isset($_SESSION['change-pass']))
+    {
+        echo $_SESSION['change-pass'];
+        unset($_SESSION['change-pass']);
+    }
 ?>
 <br>
 <br>
@@ -65,8 +90,9 @@
                                   <td><?php echo $full_name; ?></td>
                                   <td><?php echo $username; ?></td>
                                   <td>
-                                      <a href="#" class="btn-secondary">Update Admin</a>
-                                      <a href="#" class="btn-danger">Delete Admin</a>
+                                      <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
+                                      <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
+                                      <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id;?>" class="btn-danger">Delete Admin</a>
                                 </td>
                                 </tr> 
          <?php
