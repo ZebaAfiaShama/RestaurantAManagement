@@ -110,3 +110,10 @@ padding: 1%;
   background-color:#ff4757 ;
   color: white;
 }
+/* Css for Login */
+.login{
+  width:30%;
+  border: 1px solid grey;
+  margin: 10% auto;
+  padding: 2%;
+}
