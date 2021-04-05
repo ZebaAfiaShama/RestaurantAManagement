@@ -93,9 +93,15 @@ if(isset($_POST['submit']))
     if(isset($_FILES['image']['name']))
     {
     //Upload the image
-
     // To upload image we need image name ,source path and destination path
     $image_name=$_FILES['image']['name'];
+
+    // Auto rename our image
+    // 1.Get the Extension of our image (jpg,png,gif etc) e.g. "food.jpg"
+    $ext = end(explode('.', $image_name));
+
+    // 2.Rename the image
+    $image_name= "Food_Category_".rand(000, 999).'.'.$ext; // e.g. Food_Category_834.jpg
 
     $source_path=$_FILES['image']['tmp_name'];
 
