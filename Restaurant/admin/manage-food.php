@@ -65,7 +65,7 @@
                         //Count Rows to check whether we have foods or not
                         $count = mysqli_num_rows($res);
 
-                        //Create Serial Number VAriable and Set Default VAlue as 1
+                        //Create Serial Number Variable and Set Default VAlue as 1
                         $sn=1;
 
                         if($count>0)

@@ -86,7 +86,14 @@ fieldset{
     border-radius: 5px;
 }
 
-
+.success{
+    padding:2%;
+    color:green;
+}
+.error{
+    padding:2%;
+    color:red;
+}
 /* CSSS for navbar section */
 
 .logo{
@@ -114,7 +121,7 @@ fieldset{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 24% 0;
+    padding: 12% 0;
 }
 
 .food-search input[type="search"]{
